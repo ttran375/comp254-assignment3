@@ -1,2 +1,5 @@
 __pycache__
 *.zip
+Lesson3Examples
+.pytest_cache
+.mypy_cache
