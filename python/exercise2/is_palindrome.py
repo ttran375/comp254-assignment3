@@ -1,5 +1,6 @@
 def is_palindrome(s):
-    return False
+    s = "".join(char for char in s if char.isalnum()).lower()
+    return len(s) <= 1 or (s[0] == s[-1] and is_palindrome(s[1:-1]))
 
 
 def main():
