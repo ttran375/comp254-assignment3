@@ -24,7 +24,7 @@ def find_files_by_name(directory_path, target_filename):
     return found_files
 
 
-if __name__ == "__main__":
+def main():
     DIRECTORY_PATH = "."
     TARGET_FILENAME = "__init__.py"
 
@@ -35,3 +35,7 @@ if __name__ == "__main__":
             print(file_path)
     else:
         print(f"No entries found with filename '{TARGET_FILENAME}'.")
+
+
+if __name__ == "__main__":
+    main()
