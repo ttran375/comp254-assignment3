@@ -25,16 +25,16 @@ def find_files_by_name(directory_path, target_filename):
 
 
 def main():
-    DIRECTORY_PATH = "."
-    TARGET_FILENAME = "__init__.py"
+    directory = "."
+    filename = "__init__.py"
 
-    search_results = find_files_by_name(DIRECTORY_PATH, TARGET_FILENAME)
+    search_results = find_files_by_name(directory, filename)
     if search_results:
-        print(f"Entries found with filename '{TARGET_FILENAME}':")
+        print(f"Entries found with filename '{filename}':")
         for file_path in search_results:
             print(file_path)
     else:
-        print(f"No entries found with filename '{TARGET_FILENAME}'.")
+        print(f"No entries found with filename '{filename}'.")
 
 
 if __name__ == "__main__":
