@@ -1,5 +1,7 @@
 # Lab Assignment #3 – Using Recursion
 
+[![Open in Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ttran375/comp254-assignment3/blob/main/src/notebook.ipynb)
+
 Purpose: The purpose of this Lab assignment is to:
 
 - Design recursive algorithms
