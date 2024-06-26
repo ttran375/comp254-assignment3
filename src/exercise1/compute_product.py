@@ -1,6 +1,6 @@
 def compute_product(m, n):
     """
-    Computes the product of two positive integers using only addition and recursion.
+    Computes the product of two positive integers using addition and recursion.
     """
     return (
         # Base case: If n is 0, the product is 0
