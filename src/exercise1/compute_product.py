@@ -1,13 +1,8 @@
 def compute_product(m, n):
-    return 0 if n == 0 else m + compute_product(m, n - 1)
+    return (
+        # Base case: If n is 0, the product is 0
+        0 if n == 0
 
-
-def main():
-    m = 4
-    n = 2
-    result = compute_product(m, n)
-    print(result)
-
-
-if __name__ == "__main__":
-    main()
+        # Recursive case: Add m to the product of m and (n-1)
+        else m + compute_product(m, n - 1)
+    )
