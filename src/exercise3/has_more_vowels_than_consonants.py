@@ -35,7 +35,6 @@ def count_consonants(s):
         # Base case: If the string is empty, return 0
         0
         if not s
-
         # Recursive case:
         else (
             # Add 1 if the character is a consonant
