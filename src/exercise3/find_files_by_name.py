@@ -16,26 +16,10 @@ def find_files_by_name(directory_path, target_filename):
         full_item_path = os.path.join(directory_path, item)
 
         if os.path.isdir(full_item_path):
-            found_files.extend(find_files_by_name(full_item_path, target_filename))
+            found_files.extend(find_files_by_name(
+                full_item_path, target_filename))
 
         elif os.path.isfile(full_item_path) and item == target_filename:
             found_files.append(full_item_path)
 
     return found_files
-
-
-def main():
-    directory = "."
-    filename = "__init__.py"
-
-    search_results = find_files_by_name(directory, filename)
-    if search_results:
-        print(f"Entries found with filename '{filename}':")
-        for file_path in search_results:
-            print(file_path)
-    else:
-        print(f"No entries found with filename '{filename}'.")
-
-
-if __name__ == "__main__":
-    main()
