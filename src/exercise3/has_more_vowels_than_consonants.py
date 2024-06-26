@@ -14,7 +14,6 @@ def count_vowels(s):
         # Base case: if the string is empty, return 0 (no vowels in an empty string)
         0
         if not s
-
         # Recursive case: check the first character of the string
         else (
             # Add 1 if the character is a vowel
@@ -41,8 +40,7 @@ def count_consonants(s):
         else (
             # Add 1 if the character is a consonant
             1
-            if
-            s[0].isalpha() and not is_vowel(s[0])
+            if s[0].isalpha() and not is_vowel(s[0])
             else 0
         )
         +
