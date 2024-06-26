@@ -11,15 +11,19 @@ def count_vowels(s):
     Counts the number of vowels in a given string using recursion.
     """
     return (
-        # Base case: If the string is empty, return 0
-        0 if not s
+        # Base case: if the string is empty, return 0 (no vowels in an empty string)
+        0
+        if not s
 
-        # Recursive case:
+        # Recursive case: check the first character of the string
         else (
-            # Add 1 if the first character is a vowel
-            1 if is_vowel(s[0]) else 0) +
-
-        # Counting vowels in the rest of the string
+            # Add 1 if the character is a vowel
+            1
+            if is_vowel(s[0])
+            else 0
+        )
+        +
+        # Call the function recursively on the rest of the string (s[1:])
         count_vowels(s[1:])
     )
 
@@ -30,13 +34,18 @@ def count_consonants(s):
     """
     return (
         # Base case: If the string is empty, return 0
-        0 if not s
+        0
+        if not s
 
         # Recursive case:
         else (
-            # Add 1 if the first character is a consonant
-            1 if s[0].isalpha() and not is_vowel(s[0]) else 0) +
-
+            # Add 1 if the character is a consonant
+            1
+            if
+            s[0].isalpha() and not is_vowel(s[0])
+            else 0
+        )
+        +
         # Counting vowels in the rest of the string
         count_consonants(s[1:])
     )

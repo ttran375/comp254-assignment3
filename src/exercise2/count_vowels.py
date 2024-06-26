@@ -12,13 +12,17 @@ def count_vowels(s):
     """
     return (
         # Base case: if the string is empty, return 0 (no vowels in an empty string)
-        0 if not s
+        0
+        if not s
 
         # Recursive case: check the first character of the string
         else (
-            # If it is a vowel, add 1 to the count, otherwise add 0
-            1 if is_vowel(s[0]) else 0
-        ) +
+            # Add 1 if the character is a vowel
+            1
+            if is_vowel(s[0])
+            else 0
+        )
+        +
         # Call the function recursively on the rest of the string (s[1:])
         count_vowels(s[1:])
     )
